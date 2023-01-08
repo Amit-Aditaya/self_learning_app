@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>405700654546-hbe0d77m9g56if72hsg5car6fg07f1im.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.405700654546-hbe0d77m9g56if72hsg5car6fg07f1im</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDo-0BCHUNorA-y-Bblzk8FiqZzl4erAr0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>405700654546</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.selfLearningApp</string>
+	<key>PROJECT_ID</key>
+	<string>self-learning-app-2bd09</string>
+	<key>STORAGE_BUCKET</key>
+	<string>self-learning-app-2bd09.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:405700654546:ios:6f7d86d91431672696840b</string>
+</dict>
+</plist>
