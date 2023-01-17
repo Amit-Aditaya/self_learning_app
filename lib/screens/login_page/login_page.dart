@@ -36,11 +36,17 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: AppConstants.bottomSpacing * 2),
             InkWell(
               onTap: () {
-                if (idTextEditingController.text == '1111111' &&
+                if (
+                    //idTextEditingController.text == '1111111' &&
                     passwordTextEditingController.text == 'abc123') {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return HomePage();
-                  }));
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return HomePage();
+                      },
+                    ),
+                  );
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                     content: Text(

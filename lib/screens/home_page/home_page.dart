@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
                             'q_id': 3,
                             'question':
                                 questionTexteditingController.text.trim(),
-                            'u_id': 1111111,
+                            // 'u_id': 1111111,
                           }).then((value) {
                             ScaffoldMessenger.of(context)
                                 .showSnackBar(const SnackBar(

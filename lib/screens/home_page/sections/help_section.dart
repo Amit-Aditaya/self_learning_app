@@ -42,8 +42,8 @@ class HelpSection extends StatelessWidget {
                   children: List.generate(
                       snapshot.data!.length,
                       (index) => QuestionCard(
-                            username: (snapshot.data as dynamic)[index]['u_id']
-                                .toString(),
+                            // username: (snapshot.data as dynamic)[index]['u_id']
+                            //     .toString(),
                             question: (snapshot.data as dynamic)[index]
                                 ['question'],
                           )),
