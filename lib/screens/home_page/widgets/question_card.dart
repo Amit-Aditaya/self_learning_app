@@ -27,9 +27,11 @@ class QuestionCard extends StatelessWidget {
           child: Container(
             color: Colors.transparent,
             child: const Center(
-                child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 2.5),
-                    child: CircleAvatar())),
+              child: Padding(
+                padding: EdgeInsets.symmetric(vertical: 2.5),
+                child: CircleAvatar(),
+              ),
+            ),
           ),
         ),
         Expanded(
