@@ -31,6 +31,9 @@ class LoginPage extends StatelessWidget {
 
   List users = [];
 
+  bool isWrongCred = false;
+  int count = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,17 +66,26 @@ class LoginPage extends StatelessWidget {
                 }).then((value) {
                   for (int i = 0; i < users.length; i++) {
                     if (idTextEditingController.text == users[i]) {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return HomePage();
-                          },
-                        ),
-                      );
-                    } else {
-                      print('wrong id');
+                      count = 1;
                     }
+                  }
+
+                  if (count == 1 &&
+                      passwordTextEditingController.text == 'abc123') {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return HomePage();
+                        },
+                      ),
+                    );
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                        content: Text(
+                      'Invalid Login Credentials',
+                      textAlign: TextAlign.center,
+                    )));
                   }
                 });
               },

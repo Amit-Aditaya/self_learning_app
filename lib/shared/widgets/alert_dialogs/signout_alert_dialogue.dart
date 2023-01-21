@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:self_learning_app/helpers/temp_info_holder.dart';
 import 'package:self_learning_app/screens/login_page/login_page.dart';
 import 'package:self_learning_app/theme/app_colors.dart';
 
@@ -20,6 +21,9 @@ class SignoutAlertDialogue extends StatelessWidget {
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: ((context) => LoginPage())));
+
+              TempInfoHolder.course = null;
+              TempInfoHolder.topic = null;
             },
             child: const Text('Yes')),
         ElevatedButton(

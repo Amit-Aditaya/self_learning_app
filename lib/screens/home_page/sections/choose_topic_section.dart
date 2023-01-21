@@ -24,7 +24,7 @@ class _ChooseTopicSectionState extends State<ChooseTopicSection> {
             onTap: () {
               showDialog(
                   context: context,
-                  builder: (context) => const TopicAlertDialog()).then((value) {
+                  builder: (context) => TopicAlertDialog()).then((value) {
                 setState(() {});
               });
             },
